@@ -14,7 +14,7 @@ convertBtn.addEventListener("click", () => {
     massEl.textContent = mass;
 });
 
-function convert(type, numberToConvert, metric, imperial, conversion) {
+function convert(numberToConvert, metric, imperial, conversion) {
     let valueImperial = (numberToConvert * conversion).toFixed(3);
     let valueMetric = (numberToConvert / conversion).toFixed(3);
     return templateString = `${numberToConvert} ${metric} = ${valueImperial} ${imperial} | ${numberToConvert} ${imperial} = ${valueMetric} ${metric}`;
